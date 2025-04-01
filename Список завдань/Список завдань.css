@@ -1,15 +1,16 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f2f5;
+    background-color: #e0f2e9; /* світло-зелений фон */
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
+    color: #2e7d32; /* темно-зелений текст */
 }
 
 .task-container {
-    background: white;
+    background: #a5d6a7; /* ніжний зелений */
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -19,8 +20,8 @@ body {
 
 h1 {
     font-size: 22px;
-    color: #107c10;
     margin-bottom: 10px;
+    color: #1b5e20; /* ще темніший зелений */
 }
 
 ul {
@@ -31,24 +32,20 @@ ul {
 li {
     display: flex;
     align-items: center;
-    background: #ffffff;
+    background: #c8e6c9; /* світло-зелений */
     padding: 10px;
     margin: 5px 0;
     border-radius: 5px;
-    border: 1px solid #ddd;
-}
-
-.completed {
-    background: #e6ffe6;
-    color: green;
-    font-weight: bold;
-}
-
-.completed input {
-    accent-color: green;
+    border: 1px solid #81c784;
 }
 
 input[type="checkbox"] {
     margin-right: 10px;
     transform: scale(1.2);
+    accent-color: #388e3c;
+}
+
+/* При відміченому чекбоксі текст перекреслюється */
+li input:checked + span {
+    text-decoration: line-through;
 }
